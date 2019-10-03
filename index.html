@@ -1,276 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>computer science society website</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <!-- Navbar (sit on top) -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>computer science society website</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		
+		<!-- Navbar (sit on top) -->
 
-    <!-- need to font size, right centered alignment, font color -->
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="#home">
-          <img
-            class="w3"
-            src="pics/cssocietyLogo.png"
-            style="max-width:100px;max-height: 100px"
-          />
-        </a>
+		<!-- need to font size, right centered alignment, font color -->
+		<div class="w3-top" style="z-index: 999;">
+			<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+				<a href="#home" style="margin-left: 2%;">
+					<img class="w3" src="pics/cssocietyLogo.png" style="max-width:100px;max-height: 100px;"/>
+				</a>
 
-        <!-- Float links to the right. Hide them on small screens-->
-        <div class="w3-right w3-hide-small">
-          <a href="#home" class="w3-bar-item w3-button ">home</a>
-          <a href="#opportunities" class="w3-bar-item w3-button"
-            >opportunities</a
-          >
-          <a href="#initiatives" class="w3-bar-item w3-button">what we do</a>
-          <a href="#about" class="w3-bar-item w3-button">who we are</a>
-        </div>
-      </div>
-    </div>
+				<!-- Float links to the right. Hide them on small screens-->
+				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
+					<a href="#home" class="w3-bar-item w3-button " id="navbar-item" style="color: #252728; text-decoration: underline #3079c2;">home</a>
+					<a href="#opportunities" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
+					<a href="#initiatives" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
+					<a href="#about" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
+				</div>
+			</div>
+		</div>
 
-    <!-- Header -->
-    <header
-      class="w3-display-container w3-content w3-wide"
-      style="max-width:1500px;"
-      id="home"
-    >
-      <div class="w3-display-middle w3-margin-top w3-center"></div>
-    </header>
+		<!-- Header -->
+		<header class="w3-display-container w3-content w3-wide" style="max-width:100%;">
+			<div class="w3-display-middle w3-margin-top w3-center"></div>
+		</header>
 
-    <!-- Page content -->
-    <div class="w3-content w3-padding" style="max-width:1564px">
-      <!-- home Section/ photo slideshow https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
-      <div class="w3-container w3-padding-32" id="home">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
+		<!-- Page content -->
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img
-                src="/pics/slidepic1.jpg"
-                alt="piccy"
-                style="width:1500px;height:500px; align-content: center"
-              />
-              <div class="carousel-caption">
-                <h3>caption info lmao</h3>
-              </div>
-            </div>
+		<!-- Home Section -->
+		<div class="w3-content w3-padding" style="max-width:100%">
+			
+			<!-- home Section/ photo slideshow https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+			<div class="w3-container w3-padding-32" id="home">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
 
-            <div class="item">
-              <img
-                src="/pics/slidepic2.jpg"
-                alt="Cjahahahao"
-                style="width:1500px;height: 500px; align-content: center"
-              />
-              <div class="carousel-caption">
-                <h3>caption info lmao</h3>
-              </div>
-            </div>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img id="carousel-img" src="pics/slidepic1.jpg" alt="piccy"/>
+							<div class="carousel-caption">
+								<h3>caption info lmao</h3>
+							</div>
+						</div>
 
-            <div class="item">
-              <img
-                src="/pics/slidepic3.jpg"
-                alt="Nlelelelele"
-                style="width:1500px;height: 500px; align-content: center"
-              />
-              <div class="carousel-caption">
-                <h3>caption info lmao</h3>
-              </div>
-            </div>
-          </div>
+						<div class="item">
+							<img id="carousel-img" src="pics/slidepic2.jpg" alt="Cjahahahao"/>
+							<div class="carousel-caption">
+								<h3>caption info lmao</h3>
+							</div>
+						</div>
 
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="right carousel-control"
-            href="#myCarousel"
-            data-slide="next"
-          >
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
+						<div class="item">
+							<img id="carousel-img" src="pics/slidepic3.jpg" alt="Nlelelelele"/>
+							<div class="carousel-caption">
+								<h3>caption info lmao</h3>
+							</div>
+						</div>
+					</div>
 
-      <!-- opportunities Section -->
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
 
-      <div class="w3-container w3-padding-32" id="opportunities">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
-          opportunities
-        </h3>
+			<div class="w3-container w3-padding-32" id="home">
+				<!-- <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+					opportunities
+				</h3> -->
 
-        <!-- in each one we need a link image, name of event, location, date, descriptiton  -->
-        <div class="eventgrid">
-          <div id="eventone">
-            <img
-              class="ui medium rounded image"
-              alt="event one"
-              src="/pics/cssocietyLogo.png"
-              style="max-width:100px;max-height: 100px"
-            />
-            <!-- Trigger/Open The Modal -->
-            <p>
-              <button id="myBtn">Event One Information</button>
-            </p>
-          </div>
+				<!-- in each one we need a link image, name of event, location, date, descriptiton  -->
 
-          <div id="eventtwo">
-            <img
-              class="ui medium rounded image"
-              alt="event two"
-              src="/pics/cssocietyLogo.png"
-              style="max-width:100px;max-height: 100px"
-            />
-            <!-- Trigger/Open The Modal -->
-            <p>
-              <button id="myBtn">Event Two Information</button>
-            </p>
-          </div>
-          <div id="eventthree">
-            <img
-              class="ui medium rounded image"
-              alt="event three"
-              src="/pics/cssocietyLogo.png"
-              style="max-width:100px;max-height: 100px"
-            />
-            <!-- Trigger/Open The Modal -->
-            <p>
-              <button id="myBtn">Event Three Information</button>
-            </p>
-          </div>
-        </div>
+				<div class="eventgrid">
+					<div class="event-row">
+						<h1 style="text-align: center; padding-bottom: 0.5em; font-size: 4em;">mark your calendars</h1>
+						<div class="event-column">
+							<div id="event">
+								<img class="ui medium rounded image" id="event-img" alt="event one" src="pics/cssocietyLogo.png"/>
 
-        <style>
-          body {
-            font-family: Arial, Helvetica, sans-serif;
-          }
+								<!-- Trigger/Open The Modal -->
+								<h3 class="eventTitle">Event Name</h3>
+								<p class="eventDate">Event Date</p>
+								<p>
+									<button id="myBtn">more info</button>
+								</p>
+							</div>
+						</div>
+						
+						<div class="event-column">
+							<div id="event">
+								<img class="ui medium rounded image" id="event-img" alt="event two" src="pics/cssocietyLogo.png"/>
 
-          /* The Modal (background) */
-          .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0); /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-          }
+								<!-- Trigger/Open The Modal -->
+								<h3 class="eventTitle">Event Name</h3>
+								<p class="eventDate">Event Date</p>
+								<p>
+									<button id="myBtn">more info</button>
+								</p>
+							</div>
+						</div>
+						
+						<div class="event-column">
+							<div id="event">
+								<img class="ui medium rounded image" id="event-img" alt="event three" src="pics/cssocietyLogo.png"/>
 
-          /* Modal Content */
-          .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-          }
+								<!-- Trigger/Open The Modal -->
+								<h3 class="eventTitle">Event Name</h3>
+								<p class="eventDate">Event Date</p>
+								<p>
+									<button id="myBtn">more info</button>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-          /* The Close Button */
-          .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-          }
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<p>first text box</p>
+						<h1>fudoshf0j8erijtvre</h1>
+					</div>
+				</div>
+			</div>
 
-          .close:hover,
-          .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-          }
-        </style>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>first text box</p>
-            <h1>fudoshf0j8erijtvre</h1>
-          </div>
-        </div>
+		<!-- End page content -->
+		</div>
 
-        <script>
-          // Get the modal
-          var modal = document.getElementById("myModal");
+		<!-- Footer -->
+		<footer class="w3-center w3-padding-16">
+			<div class="footer-row">
+				<div class="footer-column" style="background-color:#aaa;">
+					<h3 id="footer-heading">About CSSociety</h3>
+					<p><a href="" class="footer-link">About Us</a></p>
+					<p><a href="" class="footer-link">Opportunities</a></p>
+					<p><a href="" class="footer-link">Initiatives</a></p>
+				</div>
 
-          // Get the button that opens the modal
-          var btn = document.getElementById("myBtn");
+				<div class="footer-column" style="background-color:#bbb;">
+					<h3 id="footer-heading">Stay Connected</h3>
+					<p><a href="" class="footer-link">Facebook</a></p>
+					<p><a href="" class="footer-link">Instagram</a></p>
+					<p><a href="" class="footer-link">Twitter</a></p>
+				</div>
 
-          // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("close")[0];
+				<div class="footer-column" style="background-color:#ccc;">
+					<h3 id="footer-heading">Our People</h3>
+					<p><a href="" class="footer-link">Team</a></p>
+					<p><a href="" class="footer-link">Alums</a></p>
+					<p><a href="" class="footer-link">CS Department</a></p>
+				</div>
 
-          // When the user clicks the button, open the modal
-          btn.onclick = function() {
-            modal.style.display = "block";
-          };
-
-          // When the user clicks on <span> (x), close the modal
-          span.onclick = function() {
-            modal.style.display = "none";
-          };
-
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          };
-        </script>
-      </div>
-
-      <!-- what we do / initiatives Section -->
-      <div class="w3-container w3-padding-32" id="initiatives">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
-          initiatives
-        </h3>
-        <p>Lets get in touch and talk about your next project.</p>
-      </div>
-
-      <!-- About Section -->
-      <div class="w3-container w3-padding-32" id="about">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
-          who we are
-        </h3>
-      </div>
-
-      <!-- Image of location/map -->
-      <div class="w3-container">
-        <img src="/w3images/map.jpg" class="w3-image" style="width:100%" />
-      </div>
-
-      <!-- End page content -->
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-16">
-      <p>we are awesome</p>
-    </footer>
-  </body>
+				<div class="footer-column" style="background-color:#aaa;">
+					<h3 id="footer-heading">Get Involved</h3>
+					<p><a href="" class="footer-link">Sponsor Us!</a></p>
+					<p><a href="" class="footer-link">Join the Team</a></p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

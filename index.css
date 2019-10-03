@@ -1,7 +1,154 @@
-body { 
-  padding-top: 80px; 
+* {
+	box-sizing: border-box;
 }
 
-.eventgrid {
-  display: inline-flex;
+body { 
+	font-family: "Segoe UI Light" ! important;
+	font-style: normal ! important; 
+	font-variant: normal ! important;
+	color: #1a1a1a ! important;
+}
+
+h1 {
+	color: #00003b ! important;
+}
+
+#navbar-item {
+	font-size: 1.5em; 
+	color: #3079c2; 
+}
+
+#navbar-item:hover {
+	color: #252728 ! important;
+	background-color: transparent ! important;
+}
+
+#myCarousel {
+	margin-top: 6em;
+}
+
+#carousel-img {
+	width:100%;
+	height: 40em;
+	align-content: center;
+}
+
+.active { /* Active carousel image indicator */
+	background-color: #3079c2 ! important;
+	border-color: transparent ! important;
+}
+
+.event-row {
+	width: 80%;
+	margin-left: 10%;
+}
+
+/* Create three equal columns that floats next to each other */
+.event-column {
+	float: left;
+	width: 33.33%;
+	align-content: center;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+	text-align: center;
+}
+
+#event-img {
+	max-width:175px;
+	max-height: 175px;
+	border: 1px solid navy;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.footer-column{
+	float: left;
+	width: 25%;
+	align-content: center;
+	/*padding: 5em;*/
+	text-align: center;
+	color: #00003b;
+	background-color: transparent ! important;
+}
+
+.footer-row {
+	padding-top: 5em;
+	padding-bottom: 1em;
+	width: 80%;
+	margin-left: 10%;
+	border-top-width: 20px;
+	border-top-color: #f2f2f2;
+}
+
+/* Clear floats after the columns */
+.event-row:after,
+.footer-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#footer-heading {
+	font-size: 1.25em;
+}
+
+.footer-link, .footer-link:hover {
+	color: #00003b;
+}
+
+#myBtn {
+	border-radius: 50px;
+	padding: 7px;
+	background-color: #3079c2;
+	color: white;
+	font-size: 1.15em;
+	width: 70%;
+	border-style: none;
+}
+
+.eventTitle {
+	font-size: 2em;
+}
+
+.eventDate {
+	font-size: 1.25em;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
