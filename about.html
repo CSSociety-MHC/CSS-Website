@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>computer science society website</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		
+		<!-- Navbar (sit on top) -->
+
+		<!-- need to font size, right centered alignment, font color -->
+		<div class="w3-top" style="z-index: 999;">
+			<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+				<a href="#home" style="margin-left: 2%;">
+					<img class="w3" src="pics/cssocietyLogo.png" style="max-width:100px;max-height: 100px;"/>
+				</a>
+
+				<!-- Float links to the right. Hide them on small screens-->
+				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
+					<a href="index.html" class="w3-bar-item w3-button " id="navbar-item">home</a>
+					<a href="" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
+					<a href="" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
+					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item" style="color: #252728; text-decoration: underline #3079c2;">who we are</a>
+				</div>
+			</div>
+			<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+				<div class="w3-hide-small">
+					<a href="about.html" class="w3-bar-item w3-button " id="subnavbar-item" style="color: #3079c2; text-decoration: underline #252728; width: 20%;">about us</a>
+					<a href="" class="w3-bar-item w3-button" id="subnavbar-item" style="width: 20%;">meet the team</a>
+					<a href="" class="w3-bar-item w3-button" id="subnavbar-item" style="width: 20%;">alums</a>
+					<a href="" class="w3-bar-item w3-button" id="subnavbar-item" style="width: 20%;">join us</a>
+					<a href="" class="w3-bar-item w3-button" id="subnavbar-item" style="width: 20%;">sponsor us</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<header class="w3-display-container w3-content w3-wide" style="max-width:100%;">
+			<div class="w3-display-middle w3-margin-top w3-center"></div>
+		</header>
+
+		<!-- Page content -->
+
+		<!-- Home Section -->
+		<div class="w3-content w3-padding" style="max-width:100%;margin-top: 10em;">
+
+			<div class="w3-container w3-padding-32" id="home">
+
+				<h1 class="heading">we are <span style="color:#3079c2;">CSSociety</span></h1>
+				<p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ligula at lorem imperdiet aliquam vel a ipsum. Vestibulum facilisis, odio et semper iaculis, nibh felis tempor arcu, blandit scelerisque urna lectus ut dolor. Curabitur in augue vel elit tristique blandit. Maecenas convallis dui nulla, a semper lorem ornare vel. Fusce vitae suscipit nunc, et dapibus tortor. Ut ut magna a ante maximus dictum. Praesent metus ipsum, tincidunt ac malesuada at, congue aliquet diam. Nullam a odio pharetra, fermentum orci eu, feugiat nunc. Fusce mattis venenatis molestie.</p>
+
+				<div class="w3-container w3-padding-32">
+					<div class="socialmedia">
+						<h3>catch up with us on</h4>
+						<a href="https://www.facebook.com/mhcompsci">
+							<img id="socials" src="https://img.icons8.com/ios/50/000000/facebook.png">
+						</a>
+						<a href="">
+							<img id="socials" src="https://img.icons8.com/ios/50/000000/instagram-new.png">
+						</a>
+						<a href="">
+							<img id="socials" src="https://img.icons8.com/ios/50/000000/twitter-squared.png">
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+		<!-- End page content -->
+		</div>
+
+		<!-- Footer -->
+		<footer class="w3-center w3-padding-16">
+			<div class="footer-row">
+				<div class="footer-column" style="background-color:#aaa;">
+					<h3 id="footer-heading">About CSSociety</h3>
+					<p><a href="about.html" class="footer-link">About Us</a></p>
+					<p><a href="" class="footer-link">Opportunities</a></p>
+					<p><a href="" class="footer-link">Initiatives</a></p>
+				</div>
+
+				<div class="footer-column" style="background-color:#bbb;">
+					<h3 id="footer-heading">Stay Connected</h3>
+					<p><a href="https://www.facebook.com/mhcompsci" class="footer-link">Facebook</a></p>
+					<p><a href="" class="footer-link">Instagram</a></p>
+					<p><a href="" class="footer-link">Twitter</a></p>
+				</div>
+
+				<div class="footer-column" style="background-color:#ccc;">
+					<h3 id="footer-heading">Our People</h3>
+					<p><a href="" class="footer-link">Team</a></p>
+					<p><a href="" class="footer-link">Alums</a></p>
+					<p><a href="" class="footer-link">CS Department</a></p>
+				</div>
+
+				<div class="footer-column" style="background-color:#aaa;">
+					<h3 id="footer-heading">Get Involved</h3>
+					<p><a href="" class="footer-link">Sponsor Us!</a></p>
+					<p><a href="" class="footer-link">Join the Team</a></p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

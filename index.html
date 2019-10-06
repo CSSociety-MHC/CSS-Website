@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
 	</head>
 	<body>
 		
@@ -24,10 +25,10 @@
 
 				<!-- Float links to the right. Hide them on small screens-->
 				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
-					<a href="#home" class="w3-bar-item w3-button " id="navbar-item" style="color: #252728; text-decoration: underline #3079c2;">home</a>
-					<a href="#opportunities" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
-					<a href="#initiatives" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
-					<a href="#about" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
+					<a href="index.html" class="w3-bar-item w3-button " id="navbar-item" style="color: #252728; text-decoration: underline #3079c2;">home</a>
+					<a href="" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
+					<a href="" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
+					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
 				</div>
 			</div>
 		</div>
@@ -40,7 +41,7 @@
 		<!-- Page content -->
 
 		<!-- Home Section -->
-		<div class="w3-content w3-padding" style="max-width:100%">
+		<div class="w3-content w3-padding" style="max-width:100%;margin-top: 6em;">
 			
 			<!-- home Section/ photo slideshow https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
 			<div class="w3-container w3-padding-32" id="home">
@@ -98,14 +99,14 @@
 
 				<div class="eventgrid">
 					<div class="event-row">
-						<h1 style="text-align: center; padding-bottom: 0.5em; font-size: 4em;">mark your calendars</h1>
+						<h1 class="heading">mark your calendars</h1>
 						<div class="event-column">
 							<div id="event">
-								<img class="ui medium rounded image" id="event-img" alt="event one" src="pics/cssocietyLogo.png"/>
+								<img class="ui medium rounded image" id="event-img" alt="event one" src="pics/moviePoster.jpg"/>
 
 								<!-- Trigger/Open The Modal -->
-								<h3 class="eventTitle">Event Name</h3>
-								<p class="eventDate">Event Date</p>
+								<h3 class="eventTitle">CSS Movie Night</h3>
+								<p class="eventDate">October 10 2019</p>
 								<p>
 									<button id="myBtn">more info</button>
 								</p>
@@ -114,11 +115,11 @@
 						
 						<div class="event-column">
 							<div id="event">
-								<img class="ui medium rounded image" id="event-img" alt="event two" src="pics/cssocietyLogo.png"/>
+								<img class="ui medium rounded image" id="event-img" alt="event two" src="pics/hh2019_logo.png"/>
 
 								<!-- Trigger/Open The Modal -->
-								<h3 class="eventTitle">Event Name</h3>
-								<p class="eventDate">Event Date</p>
+								<h3 class="eventTitle">HackHolyoke</h3>
+								<p class="eventDate">November 8 2019</p>
 								<p>
 									<button id="myBtn">more info</button>
 								</p>
@@ -160,14 +161,14 @@
 			<div class="footer-row">
 				<div class="footer-column" style="background-color:#aaa;">
 					<h3 id="footer-heading">About CSSociety</h3>
-					<p><a href="" class="footer-link">About Us</a></p>
+					<p><a href="about.html" class="footer-link">About Us</a></p>
 					<p><a href="" class="footer-link">Opportunities</a></p>
 					<p><a href="" class="footer-link">Initiatives</a></p>
 				</div>
 
 				<div class="footer-column" style="background-color:#bbb;">
 					<h3 id="footer-heading">Stay Connected</h3>
-					<p><a href="" class="footer-link">Facebook</a></p>
+					<p><a href="https://www.facebook.com/mhcompsci" class="footer-link">Facebook</a></p>
 					<p><a href="" class="footer-link">Instagram</a></p>
 					<p><a href="" class="footer-link">Twitter</a></p>
 				</div>
