@@ -13,6 +13,29 @@ h1 {
 	color: #00003b ! important;
 }
 
+.subnav-row {
+	text-align: center ! important;
+	align-content: center ! important;
+}
+
+/* Create five equal columns that float next to each other */
+.subnav-column {
+	float: left;
+	width: 20%;
+	display: grid;
+}
+
+.active-nav {
+	color: #252728 ! important;
+	text-decoration: underline #3079c2 ! important;
+}
+
+.active-subnav {
+	color: #3079c2 ! important;
+	background-color: #b5ebff;
+	text-decoration: underline #252728 ! important;
+}
+
 #navbar-item {
 	font-size: 1.5em; 
 	color: #3079c2; 
@@ -30,6 +53,7 @@ h1 {
 
 #subnavbar-item:hover {
 	color: #3079c2 ! important;
+	background-color: transparent; ! important;
 }
 
 #navbar-item:hover, #subnavbar-item:hover {
