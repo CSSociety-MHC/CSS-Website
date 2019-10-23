@@ -2,9 +2,9 @@
 	box-sizing: border-box;
 }
 
-body { 
+body {
 	font-family: "Segoe UI Light" ! important;
-	font-style: normal ! important; 
+	font-style: normal ! important;
 	font-variant: normal ! important;
 	color: #1a1a1a ! important;
 }
@@ -37,12 +37,12 @@ h1 {
 }
 
 #navbar-item {
-	font-size: 1.5em; 
-	color: #3079c2; 
+	font-size: 1.5em;
+	color: #3079c2;
 }
 
 #subnavbar-item {
-	font-size: 1em; 
+	font-size: 1em;
 	color: #252728;
 	font-weight: bold;
 }
@@ -231,4 +231,12 @@ footer {
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
+}
+/* scrollable */
+.container {
+	border:2px solid #ccc;
+	width:300px;
+	height: 300px;
+	overflow-y: scroll;
+
 }
