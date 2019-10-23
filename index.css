@@ -232,7 +232,7 @@ footer {
 	text-decoration: none;
 	cursor: pointer;
 }
-/* scrollable */
+/* scrollable container */
 .container {
 	border:2px solid #ccc;
 	width:300px;
