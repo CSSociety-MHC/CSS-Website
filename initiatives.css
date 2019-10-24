@@ -1,0 +1,29 @@
+/*.initiative{
+	display: flex; 
+	flex-direction: column; 
+	align-items: center;
+	
+}
+*/
+
+
+.BUTTON{
+/*  position: absolute;
+    top: 50%;*/
+   border-radius: 15px;
+   padding: 10px;
+   background-color: #00005b;
+   color:#b5ebff;
+   font-size:60px;
+   display: initial;
+   width: 80%;
+   margin-left: 10%;
+   border-style: none; 
+   font-weight:normal;
+
+}
+
+/*#init-event-grid{
+
+}
+*/
