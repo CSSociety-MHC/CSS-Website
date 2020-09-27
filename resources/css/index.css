@@ -1,3 +1,4 @@
+@import "layout.css";
 * {
 	box-sizing: border-box;
 }
@@ -26,7 +27,7 @@ h1 {
 }
 .subnav-column4 {
 	float: left;
-	width: calc(100%/4);
+	width: calc(100%/3);
 	display: grid;
 }
 .subnav-column5 {
