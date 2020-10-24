@@ -19,17 +19,17 @@
 		<!-- need to font size, right centered alignment, font color -->
 		<div class="w3-top" style="z-index: 999;">
 			<!-- header start -->
-			<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			<div class="w3-bar  w3-wide w3-padding w3-card" style="background-color:#f5f1ed">
 				<a href="index.html" style="margin-left: 2%;">
-					<img class="w3" src="resources/pics/cssocietyLogo.png" style="max-width:100px;max-height: 100px;"/>
+					<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
 				</a>
 
 				<!-- Float links to the right. Hide them on small screens-->
 				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
 					<a href="index.html" class="w3-bar-item w3-button " id="navbar-item">home</a>
-					<a href="hackathons.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
-					<a href="initiatives.html" class="w3-bar-item w3-button active-nav" id="navbar-item">what we do</a>
 					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
+					<a href="initiatives.html" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
+					<a href="errorPage.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
 				</div>
 			</div>
 			<!-- header end -->
@@ -43,16 +43,16 @@
 		<!-- Page content -->
 
 		<!-- Home Section -->
-		<div class="w3-content w3-padding" style="max-width:100%;margin-top: 10em;">
+		<div class="w3-content w3-padding" id="particles-js" style="max-width:100%;margin-top: 6em;">
 
-			<div class="w3-container w3-padding-32" id="home">
+			<div class="w3-container w3-padding-32" id="home" style="position:absolute">
 
-				<h1 class="heading">our initiatives</h1>
-				<p class="body-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ligula at lorem imperdiet aliquam vel a ipsum. Vestibulum facilisis, odio et semper iaculis, nibh felis tempor arcu, blandit scelerisque urna lectus ut dolor. Curabitur in augue vel elit tristique blandit. Maecenas convallis dui nulla, a semper lorem ornare vel. Fusce vitae suscipit nunc, et dapibus tortor. Ut ut magna a ante maximus dictum. Praesent metus ipsum, tincidunt ac malesuada at, congue aliquet diam. Nullam a odio pharetra, fermentum orci eu, feugiat nunc. Fusce mattis venenatis molestie.</p>
+				<!-- <h1 class="heading">our initiatives</h1>
+				<p class="body-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ligula at lorem imperdiet aliquam vel a ipsum. Vestibulum facilisis, odio et semper iaculis, nibh felis tempor arcu, blandit scelerisque urna lectus ut dolor. Curabitur in augue vel elit tristique blandit. Maecenas convallis dui nulla, a semper lorem ornare vel. Fusce vitae suscipit nunc, et dapibus tortor. Ut ut magna a ante maximus dictum. Praesent metus ipsum, tincidunt ac malesuada at, congue aliquet diam. Nullam a odio pharetra, fermentum orci eu, feugiat nunc. Fusce mattis venenatis molestie.</p> -->
 
 				<div class="initiative" style="padding-top: 2em;">
 					<!-- style="display: flex;  flex-direction: column; text-align: center; align-items: center;"  >   -->
-					<button class="gitButton" onclick="hideit('gitContent')" style="background-color: #00005b; color:#b5ebff;">Girls In Tech</button>
+					<button class="gitButton" onclick="hideit('gitContent')" style="background-color: #00005b; color:#b5ebff;">Career Prep</button>
 					<!-- content that displays when initiative button is clicked -->
 					<div id="gitContent" style="display: none; width: 70%; padding-top: 1em;">
 						<p style="font-size: 1.25em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ligula at lorem imperdiet aliquam vel a ipsum. Vestibulum facilisis, odio et semper iaculis, nibh felis tempor arcu, blandit scelerisque urna lectus ut dolor. Curabitur in augue vel elit tristique blandit. Maecenas convallis dui nulla, a semper lorem ornare vel. Fusce vitae suscipit nunc, et dapibus tortor. Ut ut magna a ante maximus dictum. Praesent metus ipsum, tincidunt ac malesuada at, congue aliquet diam. Nullam a odio pharetra, fermentum orci eu, feugiat nunc. Fusce mattis venenatis molestie.</p>
@@ -78,9 +78,19 @@
 				</div>
 				<div class="initiative" style="padding-top: 2em;">
 					<!-- style="display: flex;  flex-direction: column; text-align: center; align-items: center;"  >   -->
-					<button class="hhButton" onclick="hideit('hhContent')" style="background-color: #b5ebff; color:#00005b;">HackHolyoke</button>
+					<button class="hhButton" onclick="hideit('hhContent')" style="background-color: #b5ebff; color:#00005b;">Buddy System</button>
 					<!-- content that displays when initiative button is clicked -->
 					<div id="hhContent" style="display: none; width: 70%; padding-top: 1em;">
+						<p style="font-size: 1.25em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ligula at lorem imperdiet aliquam vel a ipsum. Vestibulum facilisis, odio et semper iaculis, nibh felis tempor arcu, blandit scelerisque urna lectus ut dolor. Curabitur in augue vel elit tristique blandit. Maecenas convallis dui nulla, a semper lorem ornare vel. Fusce vitae suscipit nunc, et dapibus tortor. Ut ut magna a ante maximus dictum. Praesent metus ipsum, tincidunt ac malesuada at, congue aliquet diam. Nullam a odio pharetra, fermentum orci eu, feugiat nunc. Fusce mattis venenatis molestie.</p>
+
+
+
+					</div>
+				<!-- <div class="initiative" style="padding-top: 2em;"> -->
+					<!-- style="display: flex;  flex-direction: column; text-align: center; align-items: center;"  >   -->
+					<!-- <button class="hhButton" onclick="hideit('hhContent')" style="background-color: #b5ebff; color:#00005b;">HackHolyoke</button> -->
+					<!-- content that displays when initiative button is clicked -->
+					<!-- <div id="hhContent" style="display: none; width: 70%; padding-top: 1em;">
 						<p style="font-size: 1.25em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ligula at lorem imperdiet aliquam vel a ipsum. Vestibulum facilisis, odio et semper iaculis, nibh felis tempor arcu, blandit scelerisque urna lectus ut dolor. Curabitur in augue vel elit tristique blandit. Maecenas convallis dui nulla, a semper lorem ornare vel. Fusce vitae suscipit nunc, et dapibus tortor. Ut ut magna a ante maximus dictum. Praesent metus ipsum, tincidunt ac malesuada at, congue aliquet diam. Nullam a odio pharetra, fermentum orci eu, feugiat nunc. Fusce mattis venenatis molestie.</p>
 						<div class="our-events">
 							<h3>Next Event:</h3>
@@ -98,7 +108,7 @@
 						</div>
 
 
-					</div>
+					</div> -->
 						<!-- Trigger/Open The Button -->
 		
 				</div>
@@ -108,6 +118,11 @@
 
 		<!-- End page content -->
 		</div>
+	</div>
+	<script type="text/javascript" src= "particles.js-master/particles.js"> 
+	</script> 
+	<script type="text/javascript" src= "particles.js-master/demo/js/app.js"> 
+	</script> 
 
 		<!-- footer start -->
 		<footer class="w3-center w3-padding-16">

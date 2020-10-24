@@ -11,6 +11,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
+
 	</head>
 	<body>
 		
@@ -19,17 +20,18 @@
 		<!-- need to font size, right centered alignment, font color -->
 		<div class="w3-top" style="z-index: 999;">
 			<!-- header start -->
-			<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			<div class="w3-bar w3-wide w3-padding w3-card" style="background-color:#f5f1ed">
 				<a href="index.html" style="margin-left: 2%;">
-					<img class="w3" src="resources/pics/cssocietyLogo.png" style="max-width:100px;max-height: 100px;"/>
+					<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
 				</a>
 
 				<!-- Float links to the right. Hide them on small screens-->
 				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
 					<a href="index.html" class="w3-bar-item w3-button active-nav" id="navbar-item">home</a>
-					<a href="hackathons.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
-					<a href="initiatives.html" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
 					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
+					<a href="initiatives.html" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
+					<a href="errorPage.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
+					
 				</div>
 			</div>
 			<!-- header end -->
@@ -43,10 +45,10 @@
 		<!-- Page content -->
 
 		<!-- Home Section -->
-		<div class="w3-content w3-padding" style="max-width:100%;margin-top: 6em;">
-			
+		<div class="w3-content w3-padding" id="particles-js"  style="max-width:100%;margin-top: 6em;">
 			<!-- home Section/ photo slideshow https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
-			<div class="w3-container w3-padding-32" id="home">
+
+			<div class="w3-container w3-padding-32" style="position:absolute" id="home">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					
 					<!-- Indicators -->
@@ -59,23 +61,23 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 						<div class="item active">
-							<img id="carousel-img" src="resources/pics/slidepic1.jpg" alt="piccy"/>
+							<img id="carousel-img" src="resources/pics/HH19.jpg" alt="piccy"/>
 							<div class="carousel-caption">
-								<h3>caption info lmao</h3>
+								<h3>mark your calendars</h3>
 							</div>
 						</div>
 
 						<div class="item">
-							<img id="carousel-img" src="resources/pics/slidepic2.jpg" alt="Cjahahahao"/>
+							<img id="carousel-img" src="resources/pics/HH2020_rectangle.png" alt="Cjahahahao"/>
 							<div class="carousel-caption">
-								<h3>caption info lmao</h3>
+								<h3>mark your calendars</h3>
 							</div>
 						</div>
 
 						<div class="item">
-							<img id="carousel-img" src="resources/pics/slidepic3.jpg" alt="Nlelelelele"/>
+							<img id="carousel-img" src="resources/pics/HackHolyoke 2019- organizing team.jpg" alt="Nlelelelele"/>
 							<div class="carousel-caption">
-								<h3>caption info lmao</h3>
+								<h3>mark your calendars</h3>
 							</div>
 						</div>
 					</div>
@@ -90,23 +92,22 @@
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
-			</div>
+			<!-- </div> -->
 
-			<div class="w3-container w3-padding-32" id="home">
+			<!-- <div class="w3-container w3-padding-32" id="home"> -->
 				<!-- <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
 					opportunities
 				</h3> -->
 
 				<!-- in each one we need a link image, name of event, location, date, descriptiton  -->
 
-				<div class="eventgrid">
+				<!-- <div class="eventgrid" >
 					<div class="event-row">
 						<h1 class="heading">mark your calendars</h1>
 						<div class="event-column">
 							<div id="event">
 								<img class="ui medium rounded image" id="event-img" alt="event one" src="resources/pics/moviePoster.jpg"/>
 
-								<!-- Trigger/Open The Modal -->
 								<h3 class="eventTitle">CSS Movie Night</h3>
 								<p class="eventDate">October 10 2020</p>
 								<p>
@@ -117,9 +118,8 @@
 						
 						<div class="event-column">
 							<div id="event">
-								<img class="ui medium rounded image" id="event-img" alt="event two" src="resources/pics/hh2019_logo.png"/>
+								<img class="ui medium rounded image" id="event-img" alt="event two" src="resources/pics/HHFinalLogo.jpg"/>
 
-								<!-- Trigger/Open The Modal -->
 								<h3 class="eventTitle">HackHolyoke</h3>
 								<p class="eventDate">November 7th-8th 2020</p>
 								<p>
@@ -132,7 +132,6 @@
 							<div id="event">
 								<img class="ui medium rounded image" id="event-img" alt="event three" src="resources/pics/cssocietyLogo.png"/>
 
-								<!-- Trigger/Open The Modal -->
 								<h3 class="eventTitle">Event Name</h3>
 								<p class="eventDate">Event Date</p>
 								<p>
@@ -141,22 +140,25 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- The Modal -->
-				<div id="myModal" class="modal">
-					<!-- Modal content -->
+				<!-- <div id="myModal" class="modal">
 					<div class="modal-content">
 						<span class="close">&times;</span>
 						<p>first text box</p>
 						<h1>fudoshf0j8erijtvre</h1>
 					</div>
-				</div>
-			</div>
-
+				</div> -->
+			<!-- </div> -->
+		</div>
+		</div>
 
 		<!-- End page content -->
-		</div>
+		<script type="text/javascript" src= "particles.js-master/particles.js"> 
+		</script> 
+		<script type="text/javascript" src= "particles.js-master/demo/js/app.js"> 
+		</script> 
 
 		<!-- footer start -->
 		<footer class="w3-center w3-padding-16">
