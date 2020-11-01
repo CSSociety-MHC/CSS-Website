@@ -56,7 +56,7 @@ w3-container{
 
 .active-subnav {
 	color: #3079c2 ! important;
-	background-color: #b5ebff;
+	background-color: #ffb87f;
 	text-decoration: underline #252728 ! important;
 }
 
@@ -333,7 +333,7 @@ footer {
    width: 80%;
    /*margin-left: 10%;*/
    border-style: none; 
-   font-weight:normal;
+   /* font-weight:normal; */
 
 }
 
@@ -351,10 +351,10 @@ $link: #e34234;
 $link-hover: #ba160c;
 $background: #00356B; */
 
-canvas {
+/* canvas {
   display: block;
   vertical-align: bottom;
-}
+} */
 
 #particles-js {
   /* position: absolute; */
