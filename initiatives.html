@@ -7,6 +7,8 @@
 		<title>computer science society website</title>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<link rel="stylesheet" href="resources/css/index.css" />
+		<link rel="stylesheet" href="resources/css/team.css" />
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -19,7 +21,7 @@
 		<!-- need to font size, right centered alignment, font color -->
 		<div class="w3-top" style="z-index: 999;">
 			<!-- header start -->
-			<div class="w3-bar  w3-wide w3-padding w3-card" style="background-color:#f5f1ed">
+			<div class="w3-bar  w3-wide w3-padding w3-card" style="background-color:#ffffff">
 				<a href="index.html" style="margin-left: 2%;">
 					<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
 				</a>
@@ -28,7 +30,7 @@
 				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
 					<a href="index.html" class="w3-bar-item w3-button " id="navbar-item">home</a>
 					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
-					<a href="initiatives.html" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
+					<a href="initiatives.html" class="w3-bar-item w3-button active-nav" id="navbar-item">what we do</a>
 					<a href="errorPage.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
 				</div>
 			</div>
@@ -43,16 +45,29 @@
 		<!-- Page content -->
 
 		<!-- Home Section -->
-		<div class="w3-content w3-padding" id="particles-js" style="max-width:100%;margin-top: 6em;">
+		<div class="w3-content w3-padding"  style="max-width:100%;margin-top: 6em;">
 
-			<div class="w3-container w3-padding-32" id="home" style="position:absolute">
+			<div class="w3-container w3-padding-32" id="home" >
 
-				<!-- <h1 class="heading">our initiatives</h1>
-				<p class="body-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ligula at lorem imperdiet aliquam vel a ipsum. Vestibulum facilisis, odio et semper iaculis, nibh felis tempor arcu, blandit scelerisque urna lectus ut dolor. Curabitur in augue vel elit tristique blandit. Maecenas convallis dui nulla, a semper lorem ornare vel. Fusce vitae suscipit nunc, et dapibus tortor. Ut ut magna a ante maximus dictum. Praesent metus ipsum, tincidunt ac malesuada at, congue aliquet diam. Nullam a odio pharetra, fermentum orci eu, feugiat nunc. Fusce mattis venenatis molestie.</p> -->
-
+				<h1 class="heading">our initiatives</h1>
+				<p class="body-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ligula at lorem imperdiet aliquam vel a ipsum. Vestibulum facilisis, odio et semper iaculis, nibh felis tempor arcu, blandit scelerisque urna lectus ut dolor. Curabitur in augue vel elit tristique blandit. Maecenas convallis dui nulla, a semper lorem ornare vel. Fusce vitae suscipit nunc, et dapibus tortor. Ut ut magna a ante maximus dictum. Praesent metus ipsum, tincidunt ac malesuada at, congue aliquet diam. Nullam a odio pharetra, fermentum orci eu, feugiat nunc. Fusce mattis venenatis molestie.</p>
 				<div class="initiative" style="padding-top: 2em;">
 					<!-- style="display: flex;  flex-direction: column; text-align: center; align-items: center;"  >   -->
-					<button class="gitButton"   onclick="hideit('gitContent')" style= "position:relative; background-color: #fe9443; color:#3079c2;">Pathways to Tech</button>
+					<button class="hhButton"  onclick="hideit('hhContent')" style="position:relative; background-color: #FFC8A0; color:#25467A;">Buddy System</button>
+					<!-- content that displays when initiative button is clicked -->
+					<div id="hhContent" style="display: none; width: 70%; padding-top: 1em;">
+						<p style="font-size: 1.25em;">CSS is providing students with a new online mentorship program, Buddy System, where you have the opportunities to become a mentor or a mentee. We aim to build a tighter and stronger community for Computer Science and Data Science at MHC with this remote program as we understand the road ahead could be intimidating. If you need help, the Buddy System will pair you up with someone who has more experience in academic courses and/or internship/research activities. If you want to offer help, we really appreciate you are here!</p>
+						<!-- <p style="font-size: 1.25em;">Please follow the link to register as a mentor/mentee: <a style="font-weight: bolder;"href= "https://forms.gle/EdtkmpyjMWMMrmd17"> https://forms.gle/EdtkmpyjMWMMrmd17</a>
+						</p> -->
+						<a a style="font-weight: bolder;"href= "https://forms.gle/EdtkmpyjMWMMrmd17">
+							<button type="button"  id = myBtn style = "width: 35% "> Register Here! </button> </a>
+
+
+					</div>
+				</div>
+				<div class="initiative" style="padding-top: 2em;">
+					<!-- style="display: flex;  flex-direction: column; text-align: center; align-items: center;"  >   -->
+					<button class="gitButton"   onclick="hideit('gitContent')" style= "position:relative; background-color: #FFC8A0; color:#25467A;">Career Prep</button>
 					<!-- content that displays when initiative button is clicked -->
 					<div id="gitContent" style="display: none; width: 70%; padding-top: 1em;">
 						<p style="font-size: 1.25em;">Navigate tech opportunities like a pro! From tailoring resume to differenting positions, to strategies for technical interview, we offer workshops with recuiters and MHC alums once in while to get you prepared.</p>
@@ -64,7 +79,7 @@
 								</div>	
 								<div class="div-frame">
 									<p style="font-size: 1.5em;">Resume Workshop <p>
-									<a href="" style="font-size:1.5em;font-style: italic;">Resources</a>
+									<!-- <a href="" style="font-size:1.5em;font-style: italic;">Resources</a> -->
 									<!-- <button id="myBtn" style="width: 35%">Register Here</button> -->
 								</div>
 								<div class="item">
@@ -72,29 +87,15 @@
 								</div>	
 								<div class="div-frame">
 									<p style="font-size: 1.5em;">Interview Workshop <p>
-									<p style="font-size:1.5em;font-style: italic;">Sep 29 2020</p>
+									<!-- <p style="font-size:1.5em;font-style: italic;">Sep 29 2020</p> -->
 									<!-- <button id="myBtn" style="width: 35%">Register Here</button> -->
 								</div>
-
 							</div>
 						</div>
-
-
 					</div>
 						<!-- Trigger/Open The Button -->
-		
 				</div>
-				<div class="initiative" style="padding-top: 2em;">
-					<!-- style="display: flex;  flex-direction: column; text-align: center; align-items: center;"  >   -->
-					<button class="hhButton"  onclick="hideit('hhContent')" style="position:relative; background-color: #3079c2; color:#fe9443;">Buddy System</button>
-					<!-- content that displays when initiative button is clicked -->
-					<div id="hhContent" style="display: none; width: 70%; padding-top: 1em;">
-						<p style="font-size: 1.25em;">CSS is providing students with a new online mentorship program, Buddy System, where you have the opportunities to become a mentor or a mentee. We aim to build a tighter and stronger community for Computer Science and Data Science at MHC with this remote program as we understand the road ahead could be intimidating. If you need help, the Buddy System will pair you up with someone who has more experience in academic courses and/or internship/research activities. If you want to offer help, we really appreciate you are here!</p>
-						<p style="font-size: 1.25em;">Please follow the link to register as a mentor/mentee: <a style="font-weight: bolder;"href= "https://forms.gle/EdtkmpyjMWMMrmd17"> https://forms.gle/EdtkmpyjMWMMrmd17</a>
-						</p>
 
-
-					</div>
 				<!-- <div class="initiative" style="padding-top: 2em;"> -->
 					<!-- style="display: flex;  flex-direction: column; text-align: center; align-items: center;"  >   -->
 					<!-- <button class="hhButton" onclick="hideit('hhContent')" style="background-color: #b5ebff; color:#00005b;">HackHolyoke</button> -->
@@ -120,7 +121,7 @@
 					</div> -->
 						<!-- Trigger/Open The Button -->
 		
-				</div>
+				
 
 		
 
@@ -128,10 +129,10 @@
 		<!-- End page content -->
 		</div>
 	</div>
-	<script type="text/javascript" src= "particles.js-master/particles.js"> 
+	<!-- <script type="text/javascript" src= "particles.js-master/particles.js"> 
 	</script> 
 	<script type="text/javascript" src= "particles.js-master/demo/js/app.js"> 
-	</script> 
+	</script>  -->
 
 		<!-- footer start -->
 		<footer class="w3-center w3-padding-16">

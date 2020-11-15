@@ -12,8 +12,13 @@ body {
 }
 
 h1 {
-	font-family: hero-new-hairline, sans-serif;
-	color: #00003b ! important;
+	font-family: hero-new-hairline, sans-serif ;
+	/* color: #00003b ! important; */
+	font-weight: 100 ! important;
+	margin-top: 60px ! important;
+}
+h2,h3{
+	font-weight: 200 ! important;
 }
 html {
 	font-family: hero-new-hairline, sans-serif;
@@ -24,6 +29,12 @@ w3-bar{
 }
 w3-container{
 	position:absolute;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .subnav-row {
@@ -51,13 +62,13 @@ w3-container{
 
 .active-nav {
 	color: #252728 ! important;
-	text-decoration: underline #3079c2 ! important;
+	text-decoration: underline #FF7A3B ! important;
 }
 
 .active-subnav {
-	color: #3079c2 ! important;
-	background-color: #ffb87f;
-	text-decoration: underline #252728 ! important;
+	color: #3079c2 ;
+	background-color: #B5EBFF;
+	text-decoration: underline #FF7A3B ! important;
 }
 
 #navbar-item {
@@ -67,16 +78,18 @@ w3-container{
 
 #subnavbar-item {
 	font-size: 1em; 
-	color: #00174c;
-	font-weight: bold;
+	color: #25467A;
+	font-weight: 200;
 }
 
 #navbar-item:hover {
 	color: #252728 ! important;
+	text-decoration: underline #FF7A3B;
 }
 
 #subnavbar-item:hover {
 	color: #3079c2 ! important;
+	text-decoration: underline #FF7A3B;
 	background-color: transparent ! important;
 }
 
@@ -87,13 +100,19 @@ w3-container{
 #home {
 	width: 80%;
 	margin-left: 10%;
+} 
+#home-carousel {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .heading {
 	text-align: center;
 	padding-bottom: 0.5em;
 	font-size: 3.5em;
+	color: #25467A
 }
+
 
 .body-text {
 	font-size: 1.15em;
@@ -228,8 +247,12 @@ w3-container{
 footer {
 	border-top-style: solid;
 	border-top-width: 2px;
-	border-top-color: #f2f2f2;
-	background-color: #f5f1ed;
+	border-top-color: rgba(217, 217, 217, 0.1);
+	background-color: rgba(217, 217, 217, 0.1);
+
+}
+.footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
 }
 
 /* Clear floats after the columns */
@@ -249,13 +272,14 @@ footer {
 }
 
 #myBtn {
-	border-radius: 50px;
+	border-radius: 10px;
 	padding: 7px;
-	background-color: #3079c2;
+	background-color: #25467A;
 	color: white;
-	font-size: 1.15em;
-	width: 70%;
+	font-size: 2em;
+	width: 27% !important;
 	border-style: none;
+	font-weight: 100;
 }
 
 #event-img {
@@ -363,3 +387,5 @@ $background: #00356B; */
   height: 100%; */
   background: #afcce9;
 }
+
+

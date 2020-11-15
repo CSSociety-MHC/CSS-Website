@@ -20,7 +20,7 @@
 		<!-- need to font size, right centered alignment, font color -->
 		<div class="w3-top" style="z-index: 999;">
 			<!-- header start -->
-			<div class="w3-bar  w3-wide w3-padding w3-card" style="background-color:#f5f1ed">
+			<div class="w3-bar  w3-wide w3-padding w3-card" style="background-color:#ffffff">
 				<a href="index.html" style="margin-left: 2%;">
 					<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
 				</a>
@@ -28,13 +28,13 @@
 				<!-- Float links to the right. Hide them on small screens-->
 				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
 					<a href="index.html" class="w3-bar-item w3-button " id="navbar-item">home</a>
-					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
+					<a href="about.html" class="w3-bar-item w3-button active-nav" id="navbar-item">who we are</a>
 					<a href="initiatives.html" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
 					<a href="errorPage.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
 				</div>
 			</div>
 			<!-- header end -->
-			<div class="w3-bar  w3-wide w3-card subnav-row" style="background-color:#f5f1ed">
+			<div class="w3-bar  w3-wide w3-card subnav-row" style="background-color:#ffffff">
 				<div class="w3-hide-small">
 					<div class="subnav-column4">
 						<a href="about.html" class="w3-bar-item w3-button" id="subnavbar-item">about us</a>
@@ -56,14 +56,14 @@
         </div>
         
         <!-- Page content-->
-        <div class="w3-content w3-padding" id="particles-js" style="max-width:100%;margin-top: 6em;">
+        <div class="w3-content w3-padding"  style="max-width:100%;margin-top: 6em;">
             <div class="w3-container w3-padding-32" id="home">
-				<h1 class="heading">Co-presidents</h1>
+				<h1 class="heading" style="color: #FF9A50">Co-presidents</h1>
                 <div class="row">
                 <!-- <h1 style="text-align: center"> Co-presidents </h1> -->
                 <div class="column" style="width: 35%;">
                   <div class="card">
-                    <img src="resources/team-pic/Haya Diwan.png" alt="Haya" style="width:50%; border-radius: 50%;">
+                    <img src="resources/team-pic/Haya Diwan.png" alt="Haya" style="width:50%; border-radius: 50%;"class="image-holder" >
                     <div class="team-container">
                       <h2>Haya Diwan'21</h2> <h5> (she/her/hers)</h5>
                       <p>If you see a kid with positive energy loving helping people, that's probably me.</p>
@@ -73,8 +73,10 @@
 
                 <div class="column" style="width: 35%;">
                     <div class="card">
-                      <img src="resources/team-pic/Khanh Ngo.png" alt="Khanh Ngo" style="width:50%; border-radius: 50%;">
-                      <div class="team-container">
+					<!-- <div class="image-holder"> -->
+                      	<img src="resources/team-pic/Khanh Ngo.png" alt="Khanh Ngo" style="width:50%; border-radius: 50%;" class="image-holder">
+					<!-- </div>   -->
+					<div class="team-container">
                         <h2>Khanh Ngo'21 </h2>  <h5> (she/her/hers)</h5>
                         <p>I do CS because I love technology. I run CSS because I love empowering others in the tech community. </p>
                       </div>
@@ -82,11 +84,11 @@
                   </div>
             </div>
             
-                <h1 class="heading">Community</h1>
+                <h1 class="heading"style="color: #FF9A50">Community</h1>
                 <div class="row">
                   <div class="column" style="width: 33.3%;">
                     <div class="card">
-                      <img src="resources/team-pic/Noor Aftab.png" alt="Noor" style="width:50%; border-radius: 50%;">
+                      <img src="resources/team-pic/Noor Aftab.png" alt="Noor" style="width:50%; border-radius: 50%;" class="image-holder">
                       <div class="team-container">
                         <h2>Noor Aftab'21 </h2> <h5> (she/her/hers) </h5>
                         <p>I'm an Astronomy+CS double major who loves purple, metropolitan areas, and cookies&cream ice cream :) </p>
@@ -95,10 +97,19 @@
 				  </div>                  
 				  <div class="column" style="width: 33.3%;">
                     <div class="card">
-                      <img src="resources/team-pic/Shan Jiang.png" alt="Shan" style="width:50%; border-radius: 50%;">
+                      <img src="resources/team-pic/Shan Jiang.png" alt="Shan" style="width:50%; border-radius: 50%;" class="image-holder">
                       <div class="team-container">
                         <h2>Shan Jiang'21 </h2> <h5> (she/her/hers) </h5>
                         <p>A Computer Science and Interactive Media double major at Mount Holyoke College. She is passionate about engineering related to game and web development, extended realities, and animation!! </p>
+                      </div>
+                    </div>
+				  </div>
+				  <div class="column" style="width: 33.3%;">
+                    <div class="card">
+                      <img src="resources/team-pic/Nguyen (Emily) Pham.jpg" alt="Shan" style="width:50%; border-radius: 50%;" class="image-holder">
+                      <div class="team-container">
+                        <h2>Nguyen (Emily) Pham'22 </h2> <h5> (she/her/hers) </h5>
+                        <p> </p>
                       </div>
                     </div>
                   </div>
@@ -106,7 +117,7 @@
             <div class="row">
                   <div class="column"  style="width: 33.3%;">
                     <div class="card">
-                      <img src="resources/team-pic/Amna Shahid Majeed.png" alt="Amna" style="width:50%; border-radius: 50%;">
+                      <img src="resources/team-pic/Amna Shahid Majeed.png" alt="Amna" style="width:50%; border-radius: 50%;" class="image-holder">
                       <div class="team-container">
                         <h2>Amna Shahid Majeed'22 </h2> <h5> (she/her/hers) </h5>
                         <p>:-) </p>
@@ -115,7 +126,7 @@
                   </div>
                 <div class="column" style="width: 33.3%;">
                     <div class="card">
-                      <img src="resources/team-pic/Alvionna Sunaryo.png" alt="Alvionna" style="width:50%; border-radius: 50%;">
+                      <img src="resources/team-pic/Alvionna Sunaryo.png" alt="Alvionna" style="width:50%; border-radius: 50%;" class="image-holder">
                       <div class="team-container">
                         <h2>Alvionna Sunaryo'22 </h2> <h5> (she/her/hers) </h5>
                         <p>A dumpling lover who had round dumpling cheeks when she was little. </p>
@@ -124,7 +135,7 @@
 				</div>
 				<div class="column" style="width: 33.3%;">
                     <div class="card">
-                      <img src="resources/team-pic/Angel Ebebi.png" alt="Angel" style="width:50%; border-radius: 50%;">
+                      <img src="resources/team-pic/Angel Ebebi.png" alt="Angel" style="width:50%; border-radius: 50%;" class="image-holder">
                       <div class="team-container">
                         <h2>Angel Ebebi'23 </h2> <h5> (she/her/hers) </h5>
                         <p>Hi! My name is Angel, and I'm a member of CSS's community board. I'm doubling majoring in Computer Science and Sociology. I love CS because it's applications are practically endless.</p>
@@ -132,11 +143,11 @@
                     </div>
                   </div>
 				  </div>
-			<h1 class="heading">Finance</h1>
+			<h1 class="heading" style="color: #FF9A50">Finance</h1>
 			<div class="row">
 			  <div class="column" style="width: 33.3%;">
 				<div class="card">
-				  <img src="resources/team-pic/Tenzing Tashishar.png" alt="Tenzing" style="width:50%; border-radius: 50%;">
+				  <img src="resources/team-pic/Tenzing Tashishar.png" alt="Tenzing" style="width:50%; border-radius: 50%;" class="image-holder">
 				  <div class="team-container">
 					<h2>Tenzing Tashishar'21 </h2> <h5> (she/her/hers) </h5>
 					<p>Final year at moho studying economics and statistics. I am very interested in pursuing a career in data science so I joined CSS to meet more people in the cs community. </p>
@@ -145,7 +156,7 @@
 			  </div>
 			  <div class="column" style="width: 33.3%;">
 				<div class="card">
-				  <img src="resources/team-pic/Aarushi Sharma.png" alt="Aarushi" style="width:50%; border-radius: 50%;">
+				  <img src="resources/team-pic/Aarushi Sharma.png" alt="Aarushi" style="width:50%; border-radius: 50%; margin:auto" class="image-holder">
 				  <div class="team-container">
 					<h2>Aarushi Sharma'23 </h2> <h5> (she/her/hers) </h5>
 					<p>A weirdly ambivert Econ and CS double major with a goofy sense of humor. </p>
@@ -153,11 +164,11 @@
 				</div>
 			  </div>
 			</div>
-			  <h1 class="heading">Design & Website</h1>
+			  <h1 class="heading" style="color: #FF9A50">Design & Website</h1>
 			  <div class="row">
 				<div class="column" style="width: 33.3%;">
 				  <div class="card">
-					<img src="resources/team-pic/Eryn Gautier.png" alt="Eryn" style="width:50%; border-radius: 50%;">
+					<img src="resources/team-pic/Eryn Gautier.png" alt="Eryn" style="width:50%; border-radius: 50%;"class="image-holder">
 					<div class="team-container">
 					  <h2>Eryn Gautier'22 </h2> <h5> (she/her/hers) </h5>
 					  <p>A CS major and psychology minor who loves everything dogs, design, video games and dogs (yes, again!). </p>
@@ -166,7 +177,7 @@
 				</div>
 				<div class="column" style="width: 33.3%;">
 					<div class="card">
-					  <img src="resources/team-pic/Khanh Nham.png" alt="Khanh Nham" style="width:50%; border-radius: 50%;">
+					  <img src="resources/team-pic/Khanh Nham.png" alt="Khanh Nham" style="width:50%; border-radius: 50%;" class="image-holder">
 					  <div class="team-container">
 						<h2>Khanh Nham'22 </h2> <h5> (she/her/hers) </h5>
 						<p>it's going. </p>

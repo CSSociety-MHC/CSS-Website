@@ -11,9 +11,6 @@
     margin-bottom: 16px;
     padding: 0 8px;
     flex-direction: row;
-
-
-   
   }
   
   /* Display the columns below each other instead of side by side on small screens */
@@ -29,7 +26,21 @@
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     background: #f5dec1 */
+    /* box-sizing: border-box;*/
+    /* width: 20rem;
+    height: 20rem; */
+    margin: 0px auto;
+    padding: initial;
+    background-color: initial;
+    border-radius: 1e+09px; 
+    
   }
+  .image-holder{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .gradient-border {
     --borderWidth: 3px;
     background: #1D1F20;
@@ -66,6 +77,7 @@
   /* Some left and right padding inside the container */
   .team-container {
     padding: 0 16px;
+    text-align: center;
   }
   
   /* Clear floats */
