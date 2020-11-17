@@ -26,7 +26,9 @@ html {
 }
 .accented{
 	font-family: "smoothy",sans-serif; 
-	color:#FF7A3B;
+	color:#FF7A3B ;
+	font-size: 70px;
+	font-style:italic;
 }
 w3-bar{
 	background-color: #f5f1ed;
@@ -351,7 +353,7 @@ footer {
    grid-gap:20px;
 }
 
-.hhButton, .gitButton{
+.hhButton, .gitButton, .nwButton{
 /*  position: absolute;
     top: 50%;*/
    border-radius: 15px;
