@@ -24,6 +24,10 @@ html {
 	font-family: hero-new-hairline, sans-serif;
 
 }
+.accented{
+	font-family: "smoothy",sans-serif; 
+	color:#FF7A3B;
+}
 w3-bar{
 	background-color: #f5f1ed;
 }
