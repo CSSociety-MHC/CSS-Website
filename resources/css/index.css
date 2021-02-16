@@ -157,17 +157,17 @@ w3-container{
 	border-radius: 20px;
 
 }
-.carousel-inner{
+/* .carousel-inner{
 	border-radius: 20px;
 
-}
-.carousel-control.left{
+} */
+/* .carousel-control.left{
 	border-radius: 20px;
 }
 .carousel-control.right{
 
 	border-radius: 20px;
-}
+} */
 
 .gradient-border {
 	--borderWidth: 3px;
