@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>computer science society website</title>
+		<!-- Font Awesome icons (free version)-->
+  	<link rel="stylesheet" src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/xed7nbg.css%22%3E" />
 		<link rel="stylesheet" href="resources/css/index.css" />
@@ -18,26 +20,38 @@
 	</head>
 	<body>
 		<!-- Navbar (sit on top) -->
-		<p> hi </p>
+		<nav class="navbar fixed-top">
 		<!-- need to font size, right centered alignment, font color -->
-		<div class="w3-top" style="z-index: 999;">
+		<!-- <div class="w3-top" style="z-index: 999;"> -->
 			<!-- header start -->
-			<div class="w3-bar w3-wide w3-padding w3-card" style="background-color:#ffffff">
-				<a href="index.html" style="margin-left: 2%;">
+			<div class="w3-top w3-bar w3-wide w3-padding w3-card" style="z-index: 999; background-color:#ffffff">
+				<div class="nav-header">
+				<a class="nav-brand" href="index.html" style="margin-left: 2%;">
 					<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
 				</a>
+				</div>
 
 				<!-- Float links to the right. Hide them on small screens-->
-				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
-					<a href="index.html" class="w3-bar-item w3-button active-nav" id="navbar-item">home</a>
-					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
-					<a href="initiatives.html" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
-					<a href="errorPage.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
-					
+				<button class="navbar-toggler navbar-right" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span></button>
+
+				<div class="collapse navbar-collapse navbar-right" id="navbarResponsive">
+					<ul class="nav navbar-nav">
+						<li> <a href="index.html" class="w3-bar-item w3-button nav-link active-nav" id="navbar-item">home</a> </li>
+						<li> <a href="about.html" class="w3-bar-item w3-button nav-link" id="navbar-item">who we are</a> </li>
+						<li> <a href="initiatives.html" class="w3-bar-item w3-button nav-link" id="navbar-item">what we do</a> </li>
+						<li> <a href="errorPage.html" class="w3-bar-item w3-button nav-link" id="navbar-item">opportunities</a> </li>
 				</div>
+
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+
 			</div>
 			<!-- header end -->
 		</div>
+		</nav>
 
 		<!-- Header -->
 		<header class="w3-display-container w3-content w3-wide" style="max-width:100%;">
@@ -52,7 +66,7 @@
 
 			<div class="w3-container w3-padding-32" id="home-carousel"> <!--style="position:absolute" -->
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					
+
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -117,7 +131,7 @@
 								</p>
 							</div>
 						</div>
-						
+
 						<div class="event-column">
 							<div id="event">
 								<img class="ui medium rounded image" id="event-img" alt="event two" src="resources/pics/HHFinalLogo.jpg"/>
@@ -129,7 +143,7 @@
 								</p>
 							</div>
 						</div>
-						
+
 						<div class="event-column">
 							<div id="event">
 								<img class="ui medium rounded image" id="event-img" alt="event three" src="resources/pics/cssocietyLogo.png"/>
@@ -156,9 +170,9 @@
 		</div>
 
 		<!-- End page content -->
-		<!-- <script type="text/javascript" src= "particles.js-master/particles.js"> 
-		</script> 
-		<script type="text/javascript" src= "particles.js-master/demo/js/app.js"> 
+		<!-- <script type="text/javascript" src= "particles.js-master/particles.js">
+		</script>
+		<script type="text/javascript" src= "particles.js-master/demo/js/app.js">
 		</script>  -->
 		</div>
 		<!-- footer start -->
@@ -173,16 +187,16 @@
 
 				<div class="footer-column" style="background-color:#bbb;">
 					<h3 id="footer-heading">Stay Connected</h3>
-					<p><a href="https://www.facebook.com/wearecssociety" class="footer-link">Facebook</a></p>
-					<p><a href="https://www.linkedin.com/company/computer-science-society/" class="footer-link">LinkedIn</a></p>
-					<p><a href="https://www.instagram.com/mhc_cssociety/" class="footer-link">Instagram</a></p>
+					<p><a href="https://www.facebook.com/mhcompsci" class="footer-link">Facebook</a></p>
+					<p><a href="" class="footer-link">Instagram</a></p>
+					<p><a href="" class="footer-link">Twitter</a></p>
 				</div>
 
 				<div class="footer-column" style="background-color:#ccc;">
 					<h3 id="footer-heading">Our People</h3>
-					<p><a href="team.html" class="footer-link">Team</a></p>
+					<p><a href="" class="footer-link">Team</a></p>
 					<p><a href="" class="footer-link">Alums</a></p>
-					<p><a href="https://www.mtholyoke.edu/acad/computerscience" class="footer-link">CS Department</a></p>
+					<p><a href="" class="footer-link">CS Department</a></p>
 				</div>
 
 				<div class="footer-column" style="background-color:#aaa;">
@@ -192,7 +206,7 @@
 				</div>
 			</div>
 		</footer>
-	
+
 		<!-- footer end -->
 
 	</body>
