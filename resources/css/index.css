@@ -4,7 +4,7 @@
 }
 
 body { 
-	font-family: hero-new-hairline, sans-serif;
+	font-family: hero-new ! important; 
 	font-style: normal ! important; 
 	font-weight: 200;
 	font-variant: normal ! important;
@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-	font-family: hero-new-hairline, sans-serif ;
+	font-family: hero-new, sans-serif  ;
 	/* color: #00003b ! important; */
 	font-weight: 100 ! important;
 	margin-top: 60px ! important;
@@ -21,7 +21,7 @@ h2,h3{
 	font-weight: 200 ! important;
 }
 html {
-	font-family: hero-new-hairline, sans-serif;
+	font-family: hero-new, sans-serif ! important;
 
 }
 .accented{
