@@ -395,27 +395,40 @@ $background: #00356B; */
 }
 
 .topnav {
+	padding-top:0px;
 	overflow: hidden;
 }
   
 .topnav .icon {
 	display: none;
 }
-  
+
+@media screen and (min-width: 900px) {
+	#navBar{
+		padding-top:2.05em;
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.topnav a:not(:last-child) {display: none;}
 	.topnav a.icon {
 	  float: right;
 	  display: block;
+	  position: fixed;
+	  right:10px;
+	  top: 25px;
 	}
 }
 
 @media screen and (max-width: 900px) {
-	.topnav.responsive {position: relative;}
+	#navBar{
+		padding-top:17px;
+	}
+
 	.topnav.responsive .icon {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
+	  position: fixed;
+	  right: 10px;
+	  top: 25px;
 	}
 
 	.topnav.responsive a {

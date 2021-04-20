@@ -29,13 +29,13 @@
 					<a class="nav-brand" href="index.html" style="margin-left: 2%;">
 						<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
 					</a>
-				<!-- Float links to the right. Hide them on small screens-->
+				<!-- Hide them on small screens-->
 				<div class="topnav navbar-right" id="navBar">
 					<a href="index.html" class="active-nav w3-bar-item w3-button active-nav" id="navbar-item"><span class="sr-only">Toggle navigation</span>home</a>
 					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
 					<a href="initiatives.html" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
 					<a href="errorPage.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
-					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<a href="javascript:void(0);" class="icon" role="button" id="navbar-item" onclick="myFunction()">
 					  <i class="fa fa-bars"></i>
 					</a>
 				</div>
@@ -43,10 +43,10 @@
 				<script>
 				  function myFunction() {
 					var x = document.getElementById("navBar");
-					if (x.className === "topnav") {
-					  x.className += " responsive";
+					if (x.className == "topnav navbar-right") {
+					  x.className = "topnav responsive";
 					} else {
-					  x.className = "topnav";
+					  x.className = "topnav navbar-right";
 					}
 				  }
 				</script>
