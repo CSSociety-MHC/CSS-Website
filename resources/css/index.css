@@ -108,8 +108,8 @@ w3-container{
 	margin-left: 10%;
 } 
 #home-carousel {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .heading {
@@ -118,7 +118,6 @@ w3-container{
 	font-size: 3.5em;
 	color: #25467A
 }
-
 
 .body-text {
 	font-size: 1.15em;
@@ -217,13 +216,42 @@ w3-container{
 }
 
 /* Create three equal columns that floats next to each other */
-.event-column {
+/* .event-column {
 	float: left;
-	width: 33.33%;
+	align-items: center;
+	width: 30%;
 	align-content: center;
 	padding: 10px;
-	height: 300px; /* Should be removed. Only for demonstration */
+	justify-items: center;
+	height: 300px;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 4px;
+	align-items: center;
+	justify-items: center;  
 	text-align: center;
+} */
+
+/* section {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	gap: 4px;
+	grid-auto-flow: column;
+} */
+
+.events-center {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 4px;
+	align-items: center;
+	justify-items: center;
+}
+
+.events-column {
+	width: 80%;
+	height: 300px;
+	border-radius: 15px;
 }
 
 #event-img {
