@@ -108,8 +108,8 @@ w3-container{
 	margin-left: 10%;
 } 
 #home-carousel {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .heading {
@@ -215,37 +215,21 @@ w3-container{
 	border-color: transparent ! important;
 }
 
-/* Create three equal columns that floats next to each other */
-/* .event-column {
-	float: left;
-	align-items: center;
-	width: 30%;
-	align-content: center;
-	padding: 10px;
-	justify-items: center;
-	height: 300px;
-	display: grid;
-	grid-auto-flow: column;
-	gap: 4px;
-	align-items: center;
-	justify-items: center;  
-	text-align: center;
-} */
-
-/* section {
-	display: grid;
-	justify-content: center;
-	align-content: center;
-	gap: 4px;
-	grid-auto-flow: column;
-} */
-
 .events-center {
 	display: grid;
 	grid-auto-flow: column;
 	gap: 4px;
 	align-items: center;
 	justify-items: center;
+}
+
+.event-date {
+  height: 50px;
+  width: 50px;
+  background-color: #FFFFFF;
+  margin: 5px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .events-column {
@@ -262,7 +246,7 @@ w3-container{
 	padding: 5px;
 }
 
-.footer-column{
+.footer-column {
 	float: left;
 	width: 25%;
 	align-content: center;
