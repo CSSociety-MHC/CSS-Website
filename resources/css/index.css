@@ -108,8 +108,8 @@ w3-container{
 	margin-left: 10%;
 } 
 #home-carousel {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .heading {
@@ -118,7 +118,6 @@ w3-container{
 	font-size: 3.5em;
 	color: #25467A
 }
-
 
 .body-text {
 	font-size: 1.15em;
@@ -216,14 +215,27 @@ w3-container{
 	border-color: transparent ! important;
 }
 
-/* Create three equal columns that floats next to each other */
-.event-column {
-	float: left;
-	width: 33.33%;
-	align-content: center;
-	padding: 10px;
-	height: 300px; /* Should be removed. Only for demonstration */
-	text-align: center;
+.events-center {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 4px;
+	align-items: center;
+	justify-items: center;
+}
+
+.event-date {
+  height: 50px;
+  width: 50px;
+  background-color: #FFFFFF;
+  margin: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.events-column {
+	width: 80%;
+	height: 300px;
+	border-radius: 15px;
 }
 
 #event-img {
@@ -234,7 +246,7 @@ w3-container{
 	padding: 5px;
 }
 
-.footer-column{
+.footer-column {
 	float: left;
 	width: 25%;
 	align-content: center;
@@ -394,4 +406,47 @@ $background: #00356B; */
   background: #afcce9;
 }
 
+.topnav {
+	padding-top:0px;
+	overflow: hidden;
+}
+  
+.topnav .icon {
+	display: none;
+}
+
+@media screen and (min-width: 900px) {
+	#navBar{
+		padding-top:2.05em;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.topnav a:not(:last-child) {display: none;}
+	.topnav a.icon {
+	  float: right;
+	  display: block;
+	  position: fixed;
+	  right:10px;
+	  top: 25px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#navBar{
+		padding-top:17px;
+	}
+
+	.topnav.responsive .icon {
+	  position: fixed;
+	  right: 10px;
+	  top: 25px;
+	}
+
+	.topnav.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+}
 

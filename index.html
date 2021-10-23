@@ -5,46 +5,55 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>computer science society website</title>
+		<!-- Font Awesome icons (free version)-->
+  		<link rel="stylesheet" src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/xed7nbg.css%22%3E" />
 		<link rel="stylesheet" href="resources/css/index.css" />
+		<link rel="stylesheet" href="resources/css/layout.css" />
 		<link rel="stylesheet" href="resources/css/team.css" />
 		<link rel="icon" href="resources/Logo Resources/cssocietyLogoFavicon.png">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 
 	</head>
-	<style>
-		body {
-		  background-image: url('resources/team-pic/weAreCss.png');
-		}
-		</style>
 	<body>
 		<!-- Navbar (sit on top) -->
-
+		<nav class="navbar fixed-top">
 		<!-- need to font size, right centered alignment, font color -->
-		<div class="w3-top" style="z-index: 999;">
+		<!-- <div class="w3-top" style="z-index: 999;"> -->
 			<!-- header start -->
-			<div class="w3-bar w3-wide w3-padding w3-card" style="background-color:#ffffff">
-				<!-- hide homepage on logo
-					<a href="index.html" style="margin-left: 2%;"> -->
-				<a href="" style="margin-left: 2%;">
-					<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
-				</a>
-
-				<!-- Float links to the right. Hide them on small screens-->
-				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
-					<a href="index.html" class="w3-bar-item w3-button active-nav" id="navbar-item">home</a>
+			<div class="w3-top w3-bar w3-wide w3-padding w3-card" style="background-color:#ffffff">
+				<!-- <div class="nav-header"> -->
+					<a class="nav-brand" href="index.html" style="margin-left: 2%;">
+						<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
+					</a>
+				<!-- Hide them on small screens-->
+				<div class="topnav navbar-right" id="navBar">
+					<a href="index.html" class="active-nav w3-bar-item w3-button active-nav" id="navbar-item"><span class="sr-only">Toggle navigation</span>home</a>
 					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
 					<a href="initiatives.html" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
 					<a href="errorPage.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
-					
+					<a href="javascript:void(0);" class="icon" role="button" id="navbar-item" onclick="myFunction()">
+					  <i class="fa fa-bars"></i>
+					</a>
 				</div>
+				  
+				<script>
+				  function myFunction() {
+					var x = document.getElementById("navBar");
+					if (x.className == "topnav navbar-right") {
+					  x.className = "topnav responsive";
+					} else {
+					  x.className = "topnav navbar-right";
+					}
+				  }
+				</script>
 			</div>
 			<!-- header end -->
-		</div>
+		</nav>
 
 		<!-- Header -->
 		<header class="w3-display-container w3-content w3-wide" style="max-width:100%;">
@@ -54,26 +63,27 @@
 		<!-- Page content -->
 
 		<!-- Home Section -->
-		<div class="w3-content w3-padding"   style="max-width:100%;margin-top: 6em;"> <!-- id = particle-js-->
+		<div class="w3-content w3-padding-16"   style="max-width:100%; margin-top: 6em;"> <!-- id = particle-js-->
 			<!-- home Section/ photo slideshow https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
-			<!-- <div class="w3-container w3-padding-32" id="home-carousel"> --> <!--style="position:absolute" -->
-			<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
-					
+
+			<div class="w3-container" id="home-carousel"> <!--style="position:absolute" -->
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
 					<!-- Indicators -->
-					<!-- <ol class="carousel-indicators"> -->
-						<!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li> -->
-						<!-- <li data-target="#myCarousel" data-slide-to="1"></li> -->
-						<!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
-					<!-- </ol> -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
 
 					<!-- Wrapper for slides -->
-					<!-- <div class="carousel-inner"> -->
-						<!-- <div class="item active"> -->
-							<!-- <img id="carousel-img" src="resources/team-pic/weAreCss.png" alt="piccy"/> -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img id="carousel-img" src="resources/team-pic/weAreCss.png" alt="piccy"/>
 							<!-- <div class="carousel-caption">
 								<h3>mark your calendars</h3>
 							</div> -->
-						<!-- </div> -->
+						</div>
 
 						<!-- <div class="item">
 							<img id="carousel-img" src="resources/pics/HH2020_rectangle.png" alt="Cjahahahao"/>
@@ -88,10 +98,10 @@
 								<h3>mark your calendars</h3>
 							</div>
 						</div> -->
-					<!-- </div> -->
+					</div>
 
 					<!-- Left and right controls -->
-					<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 						<span class="glyphicon glyphicon-chevron-left"></span>
 						<span class="sr-only">Previous</span>
 					</a>
@@ -100,75 +110,42 @@
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
-			</div> -->
+			</div>
 
-			<!-- <div class="w3-container w3-padding-32" id="home">
-				<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">
-					Sign up for our newsletter:
-				</h2>  -->
-
-				<!-- in each one we need a link image, name of event, location, date, descriptiton  -->
-
-				<!-- <div class="eventgrid" >
-					<div class="event-row">
-						<h1 class="heading">mark your calendars</h1>
-						<div class="event-column">
-							<div id="event">
-								<img class="ui medium rounded image" id="event-img" alt="event one" src="resources/pics/moviePoster.jpg"/>
-
-								<h3 class="eventTitle">CSS Movie Night</h3>
-								<p class="eventDate">October 10 2020</p>
-								<p>
-									<button id="myBtn">more info</button>
-								</p>
-							</div>
-						</div>
-						
-						<div class="event-column">
-							<div id="event">
-								<img class="ui medium rounded image" id="event-img" alt="event two" src="resources/pics/HHFinalLogo.jpg"/>
-
-								<h3 class="eventTitle">HackHolyoke</h3>
-								<p class="eventDate">November 7th-8th 2020</p>
-								<p>
-									<button id="myBtn">more info</button>
-								</p>
-							</div>
-						</div>
-						
-						<div class="event-column">
-							<div id="event">
-								<img class="ui medium rounded image" id="event-img" alt="event three" src="resources/pics/cssocietyLogo.png"/>
-
-								<h3 class="eventTitle">Event Name</h3>
-								<p class="eventDate">Event Date</p>
-								<p>
-									<button id="myBtn">more info</button>
-								</p>
-							</div>
+			<div class="w3-container" id="home">
+				<!-- <div style="border-bottom: 1px #FFC8A0 solid; max-width: 35%; max-height: 10%;">; -->
+					<h1 class="heading" style="text-align: left; padding-bottom:0px"> upcoming <span class="accented">events</span></h1>
+				<!-- </div> -->
+    			<!-- in each one we need a link image, name of event, location, date, descriptiton  -->
+				<section class="events-center"> 
+					<div class="events-column" style="background-color: #B5EBFF"> 
+						<div style="width:10%;">
+							<p class="heading" style="font-size:large; color: #00003B"><span class="event-date"><span style="font-weight: bold">oct</span> 20</span></p>
 						</div>
 					</div>
-				</div> -->
-
-				<!-- The Modal -->
-				<!-- <div id="myModal" class="modal">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<p>first text box</p>
-						<h1>fudoshf0j8erijtvre</h1>
+					<div class="events-column" style="background-color: #FFC8A0">
+						<div style="width: 10%;">
+							<p class="heading" style="font-size:large; color: #00003B"><span class="event-date"><span style="font-weight: bold">oct</span> 20</span></p>
+						</div>
 					</div>
-				</div> -->
-			<!-- </div> -->
-		<!-- </div> -->
+					<div class="events-column" style="background-color: #B5EBFF">
+						<div style="width: 10%;">
+							<p class="heading" style="font-size:large; color: #00003B"><span class="event-date"><span style="font-weight: bold">oct</span> 20</span></p>
+						</div>
+					</div>
+				</section>
+
+				
+
+				
+			</div>
+				
 
 		<!-- End page content -->
-		<!-- <script type="text/javascript" src= "particles.js-master/particles.js"> 
-		</script> 
-		<script type="text/javascript" src= "particles.js-master/demo/js/app.js"> 
-		</script>  -->
+
 		</div>
 		<!-- footer start -->
-		<!-- <footer class="w3-center w3-padding-16">
+		 <footer class="w3-center w3-padding-16">
 			<div class="footer-row">
 				<div class="footer-column" style="background-color:#aaa;">
 					<h3 id="footer-heading">About CSSociety</h3>
@@ -179,16 +156,16 @@
 
 				<div class="footer-column" style="background-color:#bbb;">
 					<h3 id="footer-heading">Stay Connected</h3>
-					<p><a href="https://www.facebook.com/wearecssociety" class="footer-link">Facebook</a></p>
-					<p><a href="https://www.linkedin.com/company/computer-science-society/" class="footer-link">LinkedIn</a></p>
-					<p><a href="https://www.instagram.com/mhc_cssociety/" class="footer-link">Instagram</a></p>
+					<p><a href="https://www.facebook.com/mhcompsci" class="footer-link">Facebook</a></p>
+					<p><a href="" class="footer-link">Instagram</a></p>
+					<p><a href="" class="footer-link">Twitter</a></p>
 				</div>
 
 				<div class="footer-column" style="background-color:#ccc;">
 					<h3 id="footer-heading">Our People</h3>
-					<p><a href="team.html" class="footer-link">Team</a></p>
+					<p><a href="" class="footer-link">Team</a></p>
 					<p><a href="" class="footer-link">Alums</a></p>
-					<p><a href="https://www.mtholyoke.edu/acad/computerscience" class="footer-link">CS Department</a></p>
+					<p><a href="" class="footer-link">CS Department</a></p>
 				</div>
 
 				<div class="footer-column" style="background-color:#aaa;">
@@ -196,8 +173,8 @@
 					<p><a href="joinUs.html" class="footer-link">Join the Team</a></p>
 				</div>
 			</div>
-		</footer> -->
-	
+		</footer>
+
 		<!-- footer end -->
 
 	</body>
