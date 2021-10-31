@@ -26,7 +26,7 @@ html {
 }
 .accented{
 	font-family: "smoothy",sans-serif; 
-	color:#FF7A3B ;
+	color:#FF7A3B  !important;
 	font-size: 70px;
 	font-style:italic;
 }
