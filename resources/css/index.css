@@ -218,7 +218,6 @@ w3-container{
 .events-center {
 	display: grid;
 	grid-auto-flow: column;
-	gap: 4px;
 	align-items: center;
 	justify-items: center;
 }
