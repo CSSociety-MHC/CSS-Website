@@ -5,53 +5,70 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>computer science society website</title>
+		<!-- Font Awesome icons (free version)-->
+  		<link rel="stylesheet" src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/xed7nbg.css%22%3E" />
 		<link rel="stylesheet" href="resources/css/index.css" />
+		<link rel="stylesheet" href="resources/css/layout.css" />
 		<link rel="stylesheet" href="resources/css/team.css" />
 		<link rel="icon" href="resources/Logo Resources/cssocietyLogoFavicon.png">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 
 	</head>
 
 	<body>
 		<!-- Navbar (sit on top) -->
-		<!-- need to font size, right centered alignment, font color -->
-		<div class="w3-top" style="z-index: 999;">
-			<!-- header start -->
-			<div class="w3-bar w3-wide w3-padding w3-card" style="background-color:#ffffff">
-				<!-- hide homepage on logo
-					<a href="index.html" style="margin-left: 2%;"> -->
-				<a href="" style="margin-left: 2%;">
-					<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
-				</a>
 
-				<!-- Float links to the right. Hide them on small screens-->
-				<div class="w3-right w3-hide-small" style="padding-top: 2.5em;">
-					<a href="index.html" class="w3-bar-item w3-button active-nav" id="navbar-item">home</a>
+		<!-- need to font size, right centered alignment, font color -->
+		<!-- <div class="w3-top" style="z-index: 999;"> -->
+			<!-- header start -->
+			<div class="w3-top w3-bar w3-wide w3-padding w3-card" style="background-color:#ffffff">
+				<!-- <div class="nav-header"> -->
+					<a class="nav-brand" href="index.html" style="margin-left: 2%;">
+						<img class="w3" src="resources/Logo Resources/cssocietyLogo.png" style="max-width:200px;max-height: 100%;"/>
+					</a>
+				<!-- Hide them on small screens-->
+				<div class="topnav navbar-right" id="navBar">
+					<a href="index.html" class="active-nav w3-bar-item w3-button active-nav" id="navbar-item"><span class="sr-only">Toggle navigation</span>home</a>
 					<a href="about.html" class="w3-bar-item w3-button" id="navbar-item">who we are</a>
 					<a href="initiatives.html" class="w3-bar-item w3-button" id="navbar-item">what we do</a>
 					<a href="errorPage.html" class="w3-bar-item w3-button" id="navbar-item">opportunities</a>
-					
+					<a href="javascript:void(0);" class="icon" role="button" id="navbar-item" onclick="myFunction()">
+					  <i class="fa fa-bars"></i>
+					</a>
 				</div>
+				  
+				<script>
+				  function myFunction() {
+					var x = document.getElementById("navBar");
+					if (x.className == "topnav navbar-right") {
+					  x.className = "topnav responsive";
+					} else {
+					  x.className = "topnav navbar-right";
+					}
+				  }
+				</script>
 			</div>
 			<!-- header end -->
-		</div>
+		</nav>
 
 
 		<!-- Home Section -->
 		<div style="max-width:100%;margin-top: 6em;">
 			<!-- home Section/ photo slideshow https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
 						<li data-target="#myCarousel" data-slide-to="2"></li>
 					</ol>
+
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 						<div class="item active">
@@ -74,6 +91,7 @@
 								<h3>mark your calendars</h3>
 							</div> -->
 						</div>
+
 					</div>
 
 					<!-- Left and right controls -->
@@ -91,6 +109,7 @@
 			
 		<!-- footer start -->
 		<footer class="w3-center w3-padding-16" style="margin-top: 6em;">
+
 			<div class="footer-row">
 				<div class="footer-column" style="background-color:#aaa;">
 					<h3 id="footer-heading">About CSSociety</h3>
@@ -101,16 +120,16 @@
 
 				<div class="footer-column" style="background-color:#bbb;">
 					<h3 id="footer-heading">Stay Connected</h3>
-					<p><a href="https://www.facebook.com/wearecssociety" class="footer-link">Facebook</a></p>
-					<p><a href="https://www.linkedin.com/company/computer-science-society/" class="footer-link">LinkedIn</a></p>
-					<p><a href="https://www.instagram.com/mhc_cssociety/" class="footer-link">Instagram</a></p>
+					<p><a href="https://www.facebook.com/mhcompsci" class="footer-link">Facebook</a></p>
+					<p><a href="" class="footer-link">Instagram</a></p>
+					<p><a href="" class="footer-link">Twitter</a></p>
 				</div>
 
 				<div class="footer-column" style="background-color:#ccc;">
 					<h3 id="footer-heading">Our People</h3>
-					<p><a href="team.html" class="footer-link">Team</a></p>
+					<p><a href="" class="footer-link">Team</a></p>
 					<p><a href="" class="footer-link">Alums</a></p>
-					<p><a href="https://www.mtholyoke.edu/acad/computerscience" class="footer-link">CS Department</a></p>
+					<p><a href="" class="footer-link">CS Department</a></p>
 				</div>
 
 				<div class="footer-column" style="background-color:#aaa;">
@@ -119,7 +138,6 @@
 				</div>
 			</div>
 		</footer>
-	
 		<!-- footer end -->
 
 	</body>
